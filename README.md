@@ -6,10 +6,10 @@ A Roblox item sniper that uses websockets to automatically bring you to a game a
 You can visit [this board](https://github.com/users/bestadamdagoat/projects/3/views/1) to see upcoming features.
 
 Made for Electron, but should be compatible with any executor that supports these UNC functions:
-1. [WebSockets](https://github.com/unified-naming-convention/NamingStandard/blob/main/api/WebSocket.md)
-2. [queue_on_teleport](https://github.com/unified-naming-convention/NamingStandard/blob/main/api/misc.md#queue_on_teleport)
-3. [FileSystem](https://github.com/unified-naming-convention/NamingStandard/blob/main/api/filesystem.md)
-4. MarketplaceService
+- [WebSockets](https://github.com/unified-naming-convention/NamingStandard/blob/main/api/WebSocket.md)
+- [queue_on_teleport](https://github.com/unified-naming-convention/NamingStandard/blob/main/api/misc.md#queue_on_teleport)
+- [FileSystem](https://github.com/unified-naming-convention/NamingStandard/blob/main/api/filesystem.md)
+- MarketplaceService
 
 ## How do I use this?
 You must have a server to connect to. This can be done by running wsSniperServer.py or by connecting to an external server. After that, you'll need to run the sniper script in your executor. The client script is the script that teleports your character and buys your item. You can view the logs by pressing F9 (highly recommended). Both the server and client will check for updates, but only the client will automatically update (if you run the correct script). The client will also automatically check for compatibility with your executor.
