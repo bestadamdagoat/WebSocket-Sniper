@@ -1,6 +1,8 @@
 # WebSocket-Sniper
 A Roblox item sniper that uses websockets to automatically bring you to a game and prompt to purchase the item in game.
 
+[![Watch the video](https://img.youtube.com/vi/darNLq4yFiI/mqdefault.jpg)](https://youtu.be/darNLq4yFiI)
+
 You can visit [this board](https://github.com/users/bestadamdagoat/projects/3/views/1) to see upcoming features.
 
 Made for Electron, but should be compatible with any executor that supports these UNC functions:
