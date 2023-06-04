@@ -21,7 +21,7 @@ The sniper teleports you to the game and buys the asset that was provided after 
 ```lua
 getgenv().domain = "DOMAINHERE"
 getgenv().wsversion = "VERSIONHERE"
-loadstring(game:HttpGet('https://github.com/bestadamdagoat/WebSocket-Sniper/wsSniperClient.lua'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/bestadamdagoat/WebSocket-Sniper/main/wsSniperClient.lua'))()
 ```
 After putting that in, press execute. To use the script, you do need to be trying to connect to an active server, but the server doesn't need to be broadcasting any information.
 
