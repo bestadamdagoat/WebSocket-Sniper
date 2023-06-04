@@ -8,7 +8,6 @@ You can visit [this board](https://github.com/users/bestadamdagoat/projects/3/vi
 Made for Electron, but should be compatible with any executor that supports these UNC functions:
 - [WebSockets](https://github.com/unified-naming-convention/NamingStandard/blob/main/api/WebSocket.md)
 - [queue_on_teleport](https://github.com/unified-naming-convention/NamingStandard/blob/main/api/misc.md#queue_on_teleport)
-- [FileSystem](https://github.com/unified-naming-convention/NamingStandard/blob/main/api/filesystem.md)
 - MarketplaceService
 
 ## How do I use this?

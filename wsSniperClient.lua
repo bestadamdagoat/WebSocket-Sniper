@@ -1,5 +1,5 @@
-executor = identifyexecutor()
-checkedexecutor = false
+local executor = identifyexecutor()
+local checkedexecutor = false
 
 print("Executor: " .. executor)
 if executor == "Electron" then
@@ -20,10 +20,10 @@ if checkedexecutor == false then
 end
 
 local versionreq = request({
-	Url = "https://raw.githubusercontent.com/bestadamdagoat/WebSocket-Sniper/main/VERSION.md",
+	Url = "https://raw.githubusercontent.com/bestadamdagoat/WebSocket-Sniper/main/CLIENTVERSION.md",
 	Method = "GET",
 })
-print("Version 1.0\nLatest version is" .. versionreq.Body .. "\nMake sure to launch using the script provided in the README. If you don't, you'll be running an outdated version! bestadamdagoat/WebSocket-Sniper")
+print("\nVersion 1.1\nLatest version is " .. versionreq.Body .. "\nMake sure to launch using the script provided in the README. If you don't, you'll be running an outdated version! bestadamdagoat/WebSocket-Sniper")
 
 local HttpService = game:GetService("HttpService")
 print("Attempting to connect to websocket")
@@ -36,11 +36,9 @@ ws.OnMessage:Connect(function(message)
     local data = HttpService:JSONDecode(message)
     local gameId = data.gameId
     print("GameId: " .. gameId)
-    local assetId = data.assetId
+    getgenv().assetId = data.assetId
     print("AssetId: " .. assetId)
 
-    writefile("recievedassetid.txt", assetId)
-    print("Wrote assetId to file")
     queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/bestadamdagoat/WebSocket-Sniper/main/buyafterteleport.lua'))()")
     print("Queued buyafterteleport.lua")
     game:GetService("TeleportService"):Teleport(gameId, game:GetService("Players").LocalPlayer)
