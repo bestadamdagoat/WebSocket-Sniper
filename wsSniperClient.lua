@@ -1,24 +1,3 @@
-local executor = identifyexecutor()
-local checkedexecutor = false
-
-print("Executor: " .. executor)
-if executor == "Electron" then
-    print(executor .. " is confirmed to be supported.")
-    checkedexecutor = true
-end
-if executor == "Celery" or not identifyexecutor() then
-    print(executor .. " is not supported (yet).")
-    checkedexecutor = true
-end
-if executor == "ArceusX" or executor == "Evon" or executor == "Valyse" then
-    print(executor .. " is malware. Get rid of it ASAP.")
-    checkedexecutor = true
-end
-if checkedexecutor == false then
-    print(executor .. " MIGHT be supported. Make sure it's compatible with UNC and MarketplaceService. If your executor is supported and you see this message, send a screenshot of this to BestAdam#9280 on Discord.")
-    checkedexecutor = true
-end
-
 local versionreq = request({
 	Url = "https://raw.githubusercontent.com/bestadamdagoat/WebSocket-Sniper/main/CLIENTVERSION.md",
 	Method = "GET",
